@@ -1,30 +1,10 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <nav class="flex justify-center gap-6 py-4 border-b border-gray-200">
+    <router-link to="/" class="font-semibold hover:text-blue-600" exact-active-class="text-blue-600">Beranda</router-link>
+    <router-link to="/fitur" class="font-semibold hover:text-blue-600" exact-active-class="text-blue-600">Fitur</router-link>
+    <router-link to="/demo" class="font-semibold hover:text-blue-600" exact-active-class="text-blue-600">Demo</router-link>
+    <router-link to="/kontak" class="font-semibold hover:text-blue-600" exact-active-class="text-blue-600">Kontak</router-link>
   </nav>
-  <router-view/>
+
+  <router-view />
 </template>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
